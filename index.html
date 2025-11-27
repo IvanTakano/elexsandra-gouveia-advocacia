@@ -124,12 +124,11 @@
                         </div>
                     </div>
 
-                    <form class="contact-form"
-                        onsubmit="event.preventDefault(); alert('Mensagem enviada (simulação). Entre em contato pelo WhatsApp para atendimento imediato.');">
-                        <input type="text" placeholder="Seu Nome" required>
-                        <input type="email" placeholder="Seu E-mail" required>
-                        <input type="tel" placeholder="Seu Telefone">
-                        <textarea placeholder="Breve descrição do caso (opcional)" rows="4"></textarea>
+                    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mjkqryge" method="POST">
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                        <input type="email" name="email" placeholder="Seu E-mail" required>
+                        <input type="tel" name="phone" placeholder="Seu Telefone">
+                        <textarea name="message" placeholder="Breve descrição do caso (opcional)" rows="4"></textarea>
                         <button type="submit" class="cta-button">Enviar Mensagem</button>
                     </form>
                 </div>
